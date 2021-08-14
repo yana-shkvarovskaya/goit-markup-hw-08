@@ -1,0 +1,48 @@
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 40px;
+    transform: translate(-50%, -50%) scale(1);
+  
+    width: 528px;
+    height: 581px;
+    background-color: $primaryBcgColor;
+  
+    transition: transform 1000ms $animationTimingFunction;
+  }
+  
+  .modal__button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+  
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 9px;
+    padding-top: 9px;
+  
+    width: 30px;
+    height: 30px;
+  
+    background: $primaryBcgColor;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: $titleTextColor;
+  }
+  
+  .modal__icon {
+    width: 11px;
+    height: 11px;
+    fill: currentColor;
+  
+  .modal__button:hover &{
+  color: $accentColor;
+  }
+}

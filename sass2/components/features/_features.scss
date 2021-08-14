@@ -1,0 +1,82 @@
+.section-features {
+  @media screen and (max-width: 767px) {
+  padding-bottom: 60px;
+  }
+}
+
+.section-features__title {
+  display: none;
+}
+
+.features {
+  display: block;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap:nowrap;
+  }
+
+  &__title {
+    color: $titleTextColor;
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+    @media screen and (max-width: 767px) {
+    text-align: center;
+    }
+
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
+
+.features__item {
+  &::before {
+    display: block;
+    content: '';
+    height: 120px;
+
+    background-image: url(../images/antenna.svg);
+    background-size: 70px 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $secondaryBcgColor;
+  }
+
+  @media screen and (max-width:767px){
+    &:not(:last-child) {
+      margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  width: calc((100% - 15px*4)/2);
+  margin: 15px;
+}
+@media screen and (min-width: 1200px) {
+width: calc((100%-15px*8)/4);
+  margin: 15px;
+}
+
+  &--icon-clock::before {
+    background-image: url(../images/clock.svg);
+  }
+  &--icon-diagram::before {
+    background-image: url(../images/diagram.svg);
+  }
+  &-astronaut::before {
+    background-image: url(../images/astronaut.svg);
+  }
+}

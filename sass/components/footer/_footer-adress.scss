@@ -1,0 +1,57 @@
+.footer__info {
+    display: flex;
+    margin-right: 0;
+    padding-right: 0;
+  }
+.footer__contacts {
+    display: block;
+    text-decoration: none;
+  }
+
+.footer-adress {
+    display: inline-block;
+    width: 231px;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+
+  &__postal {
+    display: block;
+    color: $primaryBcgColor;
+    margin-top: 20px;
+  }
+  &__email {
+    display: block;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    margin-top: 9px;
+    transition: color $animationDuration $animationTimingFunction;
+    
+    &:hover,
+    &:focus {
+    color: $accentColor;
+    outline: none;
+  }
+}
+  &__tel {
+    display: block;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    margin-top: 9px;
+    transition: color $animationDuration $animationTimingFunction;
+   &:hover,
+   &:focus {
+      color: $accentColor;
+      outline: none;
+    } 
+}
+}
+
+
+  
+  
+ 
+  
+  
+
+  

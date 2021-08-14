@@ -1,0 +1,45 @@
+.section__work{
+  padding-top: 0;
+@media screen and (max-width:1199px) {
+  display: none;
+}
+}
+
+.work {
+    display: flex;
+    margin-top: 0;
+    justify-content: center;
+
+
+&__title {
+        position: absolute;
+        bottom: 0;
+        margin: 0;
+        width: 100%;
+        padding: 27px 82px 27px 83px;
+        white-space: nowrap;
+        color: #ffffff;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-align: center;
+        text-transform: uppercase;
+      
+        background: rgba(47, 48, 58, 0.8);
+      }
+      
+      &__image{
+        display: block;
+        margin: 0;
+      }
+  }
+  
+  .work__item {
+    position: relative;
+
+    &:not(:last-child) {
+    margin-right: 30px;
+  }
+  }
+  
