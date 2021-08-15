@@ -1,13 +1,30 @@
 .footer-form {
-    display: flex;
-    align-items: flex-end;
-    margin-left: 93px;
+    display: block;
+    text-align: center;
+    // margin-left: 93px;
+    padding-top: 60px;
     padding-left: 0;
-    padding-top: 12px;
-    padding-bottom: 40px;
+    // padding-top: 12px;
+    // padding-bottom: 40px;
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: flex-end;
+      margin-left: 93px;
+      padding-left: 0;
+      padding-top: 12px;
+      padding-bottom: 40px;
+      }
   
   &__block {
+    @media screen and (min-width: 768px) {
     flex-direction: column;
+    // text-align: center;
+
+    }
+    @media screen and (min-width: 1200px) {
+      text-align: start;
+      }
   }
   
   &__caption {
@@ -23,9 +40,14 @@
   
   &__input {
     display: block;
-    width: 358px;
-    height: 50px;
-    margin-right: 12px;
+    width: 100%;
+    @media screen and (min-width: 768px) {
+      width: 450px;
+      margin-left: auto;
+      margin-right: auto;
+      }
+
+    margin-bottom: 20px;
     padding: 15px 16px;
     background-color: $thirdlyBcgColor;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -45,6 +67,13 @@
   &:focus {
     outline: none;
   }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+    margin-bottom: 0;
+    }
 }
 }
   

@@ -1,17 +1,6 @@
 .section__team {
-  @media screen and (max-width: 767px) {
-    padding-top: 0;
-    }
     background-color: $secondaryBcgColor;
 
-  }
-
-  .section-team_title{
-    margin-bottom: 30px;
-
-    @media screen and (max-width: 767px) {
-      padding-top: 60px;
-      }
   }
   
   .team {

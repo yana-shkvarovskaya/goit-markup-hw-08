@@ -1,11 +1,33 @@
 .footer__info {
-    display: flex;
+    display:block;
+    text-align: center;
+
     margin-right: 0;
     padding-right: 0;
+
+    @media screen and (min-width: 1200px) {
+     display: flex;
+     text-align: start;
+      }
+
+  
   }
+
+  .footer__join{
+    @media screen and (min-width: 768px){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+  }
+
 .footer__contacts {
     display: block;
     text-decoration: none;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-right: 165px;
+      }
+ 
   }
 
 .footer-adress {
@@ -24,7 +46,7 @@
     display: block;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
-    margin-top: 9px;
+    margin-top: 8px;
     transition: color $animationDuration $animationTimingFunction;
     
     &:hover,
@@ -37,7 +59,7 @@
     display: block;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
-    margin-top: 9px;
+    margin-top: 8px;
     transition: color $animationDuration $animationTimingFunction;
    &:hover,
    &:focus {

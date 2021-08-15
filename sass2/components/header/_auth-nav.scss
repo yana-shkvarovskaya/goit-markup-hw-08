@@ -1,9 +1,28 @@
 .auth-nav {
     display: flex;
+    // margin-left: 84px;
+
+    @media screen and (max-width: 767px){
+      display: none;
+    }
+
+    @media screen and (min-width: 768px) and (max-width:1199px) {
+      display: block;
+    }
+
   }
   
   .auth-nav__item{
+    @media screen and (min-width: 1200px){
     margin-left: 50px;
+    padding: 0;
+    }
+
+    @media screen and (max-width: 1199px){
+      &:not(:last-child){
+      margin-bottom: 10px;
+    }
+  }
   }
 
   
@@ -12,7 +31,7 @@
     color: $primaryTextColor;
     margin-left: 0;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.15;
     letter-spacing: 0.02em;
     text-decoration: none;
@@ -20,6 +39,11 @@
     align-items: center;
     transition: color $animationDuration $animationTimingFunction;
   
+    @media screen and (min-width: 1200px){
+      font-size: 14px;
+      line-height: 1.14;
+      }  
+    
   &:hover,
   &:focus {
     color: $accentColor;

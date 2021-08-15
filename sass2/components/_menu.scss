@@ -1,0 +1,157 @@
+.menu-button {
+    display: inline-flex;
+    margin: 0;
+    // margin-left: 276px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: inherit;
+    fill:currentColor;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+      }
+  
+&:hover .icon-cross,
+&:focus .icon-cross,
+&:hover .icon-menu,
+&:focus .icon-menu{
+color:$accentColor;
+}
+  }
+
+
+//   .menu-button .icon-cross {
+//     display: none;
+//   }
+  
+//   .menu-button.is-open .icon-cross {
+//     display: block;
+//   }
+  
+//   .menu-button.is-open .icon-menu {
+//     display: none;
+//   }
+  
+  .menu-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 999;
+
+      transform: translateX(100%);
+
+    // display: none;
+    background-color: $primaryBcgColor;
+    padding: 20px;
+    text-align: end;
+    font-size: 20px;
+    fill:currentColor;
+
+//   @media screen and (max-width: 767px) {
+//     display: none;
+//     position: absolute;
+//     top: 100%;
+//     left: 0;
+//     width: 100%;
+//     height: 800px;
+
+      &.is-open {
+        display: block;
+        transform: translateX(0);
+      }
+    }
+
+  .mobile-site-nav{
+      display: block;
+      text-align: start;
+      margin-bottom: 302px;
+
+      &__item:not(:last-child){
+        margin-bottom: 32px;
+    }
+  }
+
+
+ 
+  .mobile-site-nav__link {
+    color: $titleTextColor;
+  
+    display: block;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.175;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    cursor: pointer;
+    
+    transition: color $animationDuration $animationTimingFunction;
+ 
+  &:hover,
+  &:focus {
+    color: $accentColor;
+    outline: none;
+  }
+  
+  &--active {
+    transition: color $animationDuration $animationTimingFunction;
+    color: $accentColor;
+  }
+}
+
+.mobile-auth-nav{
+    display: block;
+    text-align: start;
+    margin-bottom: 64px;
+}
+
+.mobile-auth-nav__link{
+    display: block;
+    font-weight: 500;
+
+    cursor: pointer;
+    
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    margin-bottom: 32px;
+
+    transition: color $animationDuration $animationTimingFunction;
+ 
+    &
+  &:hover,
+  &:focus {
+    color: $accentColor;
+    outline: none;
+  }
+}
+
+.mobile-auth-nav__tel{
+    color: $accentColor;
+    font-size: 34px;
+    line-height: 1.176;
+}
+
+.mobile-auth-nav__mail{
+    color: $primaryTextColor;
+    font-size: 24px;
+    line-height: 1.17;
+}
+
+.mobile-social{
+    display: flex;
+
+    &__item:not(:last-child) {
+        margin-right: 20px;
+      }
+
+    &__link{
+        font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: $accentColor;
+    }
+}
