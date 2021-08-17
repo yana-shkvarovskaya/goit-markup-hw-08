@@ -63,6 +63,8 @@ ul {
 
 .image {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .fields__button, .footer-form__button {
@@ -118,6 +120,13 @@ ul {
   text-decoration: none;
 }
 
+@media screen and (max-width: 767px) {
+  .logo {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
 .logo__accent {
   color: #2196f3;
 }
@@ -126,11 +135,16 @@ ul {
   border-bottom: 1px solid #ececec;
   position: fixed;
   width: 100%;
-  min-height: 80px;
   top: 0;
   left: 0;
   z-index: 3;
   background-color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  .page-header {
+    height: 60px;
+  }
 }
 
 @media screen and (min-width: 768px) {

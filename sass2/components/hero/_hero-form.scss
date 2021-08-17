@@ -1,7 +1,10 @@
 .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
     width: 100%;
     height: 100%;
-    padding: 0;
+    padding: 0;  
     color: $titleTextColor;
   }
   
@@ -23,6 +26,13 @@
     margin-bottom: 10px;
     flex-direction: column;
     text-align: start;
+
+    @media screen and (max-width: 1199px) {
+      max-width: 450px;
+      width: 100%;
+    // padding-left: 40px;
+    // padding-right: 40px;
+    }
   }
   
   .form__comments {
@@ -31,6 +41,11 @@
     flex-direction: column;
     text-align: start;
     margin-bottom: 0;
+
+    @media screen and (max-width: 1199px) {
+      max-width: 450px;
+      width: 100%;
+    }
   }
   
   .form__lable {
@@ -46,8 +61,11 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
-    width: 448px;
+    max-width: 448px;
     height: 40px;
+    @media screen and (max-width: 1199px) {
+      max-width: 370px;
+    }
     padding: 11px 12px;
     padding-left: 42px;
     color: $titleTextColor;
@@ -67,7 +85,8 @@
     display: inline-block;
     position: absolute;
     top: 55%;
-    left: 15px;
+    left:15px;
+
     fill: currentColor;
 
     .form__field:hover &,
@@ -79,6 +98,11 @@
   
   .form__textarea {
     width: 448px;
+    @media screen and (max-width: 1199px) {
+      max-width: 450px;
+      width: 100%;
+    }
+
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
@@ -114,6 +138,11 @@
     margin-bottom: 30px;
     font-size: 14px;
     line-height: 1.71;
+
+    // @media screen and (max-width: 767px) {
+    //   // padding-right: 40px;
+    //   // padding-left: 40px;
+    //    }
   
     letter-spacing: 0.03em;
   
@@ -123,6 +152,11 @@
   .agreement__label {
     display: inline-block;
     color: $primaryTextColor;
+    @media screen and (max-width: 1199px) {
+      font-size: 12px;
+      line-height: 1.71;
+    }
+    
   }
   
   .agreement__input {
@@ -154,7 +188,7 @@
     border-radius: 4px;
     fill: currentColor;
     top: 75.8%;
-    left: 51px;
+    left: 66px;
     margin-right: 8.4px;
   }
   
