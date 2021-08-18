@@ -25,6 +25,57 @@
           <a href="./index.html" lang="en" class="logo page-header__logo"
             ><span class="logo__accent">Web</span>Studio</a
           >
+          <button 
+          type="button"
+            class="menu-button js-open-menu"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button>
+            <svg width="40px" height="40px" aria-label="переключитель мобильного меню">
+              <use class="icon-menu" href="./images/icon-forms.svg#icon-mobile-menu"></use>
+            </svg>
+          </button>
+          <div class="menu-container js-menu-container" id="menu-container" data-menu>
+            <button 
+            type="button"
+              class="menu-button js-close-menu"
+              aria-expanded="false"
+              aria-controls="menu-container"
+              data-menu-button>
+              <svg width="40px" height="40px" aria-label="переключитель мобильного меню">
+                <use class="icon-cross" href="./images/icon-forms.svg#icon-mobile-close"></use>
+              </svg>
+            </button>
+            <div class="mobile-site-nav">
+            <div class="mobile-site-nav__item">
+              <a href="./index.html" class="mobile-site-nav__link ">Студия</a>
+            </div>
+            <div class="mobile-site-nav__item">
+              <a href="./portfolio.html" class="mobile-site-nav__link mobile-site-nav__link--active">Портфолио</a>
+            </div>
+            <div class="mobile-site-nav__item"><a href="" class="mobile-site-nav__link">Контакты</a>
+            </div>
+            </div>
+            <div class="mobile-auth-nav">
+            <div class="mobile-auth-nav__item">
+              <a href="tel:+380961111111" class="mobile-auth-nav__link mobile-auth-nav__tel">
+                  +38 096 111 11 11</a>
+            </div>
+            <div class="mobile-auth-nav__item">
+              <a href="mailto:info@devstudio.com" class="mobile-auth-nav__link mobile-auth-nav__mail">
+                  info@devstudio.com</a>
+            </div>
+          </div>
+    <div class="mobile-social">
+   <div class="mobile-social__item"><a href="" class="mobile-social__link">Instagram</a></div>
+   <div class="mobile-social__line"></div>
+   <div class="mobile-social__item"><a href="" class="mobile-social__link">Twitter</a></div>
+   <div class="mobile-social__line"></div>
+   <div class="mobile-social__item"><a href="" class="mobile-social__link">Facebook</a></div>
+   <div class="mobile-social__line"></div>
+   <div class="mobile-social__item"><a href="" class="mobile-social__link">LinkedIn</a></div>
+</div>
+          </div>
           <ul class="site-nav">
             <li class="site-nav__item">
               <a href="./index.html" class="site-nav__link">Студия</a>
@@ -79,10 +130,10 @@
                 <div class="project-overlay">
                   <img
                     class="project-list__image"
+                    srcset="./images/img1.jpg 1x,./images/img1-2x.jpg 2x"
                     src="./images/img1.jpg"
                     alt="часть команды: две девушки и мужчина на отдельных фотокарточках с именами и должностями"
                     width="370"
-                    height="294"
                   />
                   <p class="project-overlay__text">
                     Технокряк это современная площадка распространения
@@ -101,10 +152,10 @@
                 <div class="project-overlay">
                   <img
                     class="project-list__image"
+                    srcset="./images/img2.jpg 1x,./images/img2-2x.jpg 2x"
                     src="./images/img2.jpg"
                     alt="два баскетболиста борются в воздухе за мяч"
                     width="370"
-                    height="294"
                   />
                   <p class="project-overlay__text">
                     Технокряк это современная площадка распространения
@@ -123,10 +174,10 @@
                 <div class="project-overlay">
                   <img
                     class="project-list__image"
+                    srcset="./images/img3.jpg 1x,./images/img3-2x.jpg 2x"
                     src="./images/img3.jpg"
                     alt="Надпись The Seafood restautant с рыбой на фоне"
                     width="370"
-                    height="294"
                   />
                   <p class="project-overlay__text">
                     Технокряк это современная площадка распространения
@@ -150,10 +201,10 @@
                   </p>
                   <img
                     class="project-list__image"
+                    srcset="./images/img4.jpg 1x,./images/img4-2x.jpg 2x"
                     src="./images/img4.jpg"
                     alt="большие черные наушники"
                     width="370"
-                    height="294"
                   />
                 </div>
                 <div class="project-list__description">
@@ -167,10 +218,10 @@
                 <div class="project-overlay">
                   <img
                     class="project-list__image"
+                    srcset="./images/img5.jpg 1x,./images/img5-2x.jpg 2x"
                     src="./images/img5.jpg"
                     alt="одна белая коробочка побольше и одна поменьше под цвет дерева"
                     width="370"
-                    height="294"
                   />
                   <p class="project-overlay__text">
                     Технокряк это современная площадка распространения
@@ -189,10 +240,10 @@
                 <div class="project-overlay">
                   <img
                     class="project-list__image"
+                    srcset="./images/img6.jpg 1x,./images/img6-2x.jpg 2x"
                     src="./images/img6.jpg"
                     alt="компьютерный моноблок"
                     width="370"
-                    height="294"
                   />
                   <p class="project-overlay__text">
                     Технокряк это современная площадка распространения
@@ -211,10 +262,10 @@
                 <div class="project-overlay">
                   <img
                     class="project-list__image"
+                    srcset="./images/img7.jpg 1x,./images/img7-2x.jpg 2x"
                     src="./images/img7.jpg"
                     alt="Открытый фотожурнал"
                     width="370"
-                    height="294"
                   />
                   <p class="project-overlay__text">
                     Технокряк это современная площадка распространения
@@ -233,10 +284,10 @@
                 <div class="project-overlay">
                   <img
                     class="project-list__image"
+                    srcset="./images/img8.jpg 1x,./images/img8-2x.jpg 2x"
                     src="./images/img8.jpg"
                     alt="этикетка для одежды"
                     width="370"
-                    height="294"
                   />
                   <p class="project-overlay__text">
                     Технокряк это современная площадка распространения
@@ -255,10 +306,10 @@
                 <div class="project-overlay">
                   <img
                     class="project-list__image"
+                    srcset="./images/img9.jpg 1x,./images/img9-2x.jpg 2x"
                     src="./images/img9.jpg"
                     alt="пальцы рук печатают по клавиатуре macbook"
                     width="370"
-                    height="294"
                   />
                   <p class="project-overlay__text">
                     Технокряк это современная площадка распространения
@@ -347,12 +398,21 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
     <script>
-      const { height: pageHeaderHeight } = document
-        .querySelector('.page-header')
-        .getBoundingClientRect();
+      (() => {
+        document
+          .querySelector('.js-speaker-form')
+          .addEventListener('submit', e => {
+            e.preventDefault();
 
-      document.body.style.paddingTop = `${pageHeaderHeight}px`;
+            new FormData(e.currentTarget).forEach((value, name) =>
+              console.log(`${name}: ${value}`),
+            );
+
+            e.currentTarget.reset(); 
+          });
+      })();
     </script>
   </body>
 </html>
