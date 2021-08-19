@@ -61,9 +61,10 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
-    max-width: 448px;
+    width: 448px;
     height: 40px;
     @media screen and (max-width: 1199px) {
+      width: 100%;
       max-width: 370px;
     }
     padding: 11px 12px;

@@ -1,5 +1,8 @@
 .menu-container {
     position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     top: 0;
     left: 0;
     width: 100%;
@@ -12,8 +15,8 @@
   // display: none;
   background-color: $primaryBcgColor;
   padding-left: 40px;
-  padding-top: 10px;
-  padding-right: 15px;
+  padding-top: 48px;
+  // padding-right: 15px;
   text-align: end;
   font-size: 20px;
   fill:currentColor;
@@ -28,7 +31,7 @@
 //     height: 800px;
 
     &.is-open {
-      display: block;
+      // display: block;
       transform: translateX(0);
     }
   }
@@ -48,6 +51,12 @@
 
     @media screen and (min-width: 768px) {
         display: none;
+      }
+
+      .menu-container.is-open &{
+        position: absolute;
+        top: 10px;
+        right: 15px;
       }
   
 &:hover .icon-cross,
@@ -75,7 +84,7 @@ color:$accentColor;
   .mobile-site-nav{
       display: block;
       text-align: start;
-      margin-bottom: 302px;
+      // margin-bottom: 302px;
 
       &__item:not(:last-child){
         margin-bottom: 32px;
@@ -112,7 +121,7 @@ color:$accentColor;
 .mobile-auth-nav{
     display: block;
     text-align: start;
-    margin-bottom: 64px;
+    margin-bottom: 48px;
 }
 
 .mobile-auth-nav__link{
@@ -151,7 +160,7 @@ color:$accentColor;
 .mobile-social{
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 48px;
+    margin-top: 48px;
 
     // &__item:not(:last-child) {
     //     margin-right: 20px;
